@@ -19,6 +19,8 @@
 		FA116EF526D7B98E00088C25 /* SuccesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA116EF426D7B98E00088C25 /* SuccesViewController.swift */; };
 		FA116EF826D7C70C00088C25 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA116EF726D7C70C00088C25 /* Utilities.swift */; };
 		FA116EFA26D7CE6200088C25 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA116EF926D7CE6200088C25 /* GoogleService-Info.plist */; };
+		FA116EFC26D9022400088C25 /* bvideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FA116EFB26D9022400088C25 /* bvideo.mp4 */; };
+		FA116EFF26D913C600088C25 /* video3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FA116EFE26D913C500088C25 /* video3.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		FA116EF426D7B98E00088C25 /* SuccesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccesViewController.swift; sourceTree = "<group>"; };
 		FA116EF726D7C70C00088C25 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		FA116EF926D7CE6200088C25 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FA116EFB26D9022400088C25 /* bvideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bvideo.mp4; sourceTree = "<group>"; };
+		FA116EFE26D913C500088C25 /* video3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video3.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,7 @@
 		FA116EDA26D7B6DE00088C25 /* UserAccount */ = {
 			isa = PBXGroup;
 			children = (
+				FA116EFD26D9022900088C25 /* Media */,
 				FA116EDB26D7B6DE00088C25 /* AppDelegate.swift */,
 				FA116EDD26D7B6DE00088C25 /* SceneDelegate.swift */,
 				FA116EF626D7C6FA00088C25 /* Helper */,
@@ -120,6 +125,15 @@
 				FA116EF726D7C70C00088C25 /* Utilities.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		FA116EFD26D9022900088C25 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				FA116EFE26D913C500088C25 /* video3.mp4 */,
+				FA116EFB26D9022400088C25 /* bvideo.mp4 */,
+			);
+			path = Media;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +195,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA116EFC26D9022400088C25 /* bvideo.mp4 in Resources */,
+				FA116EFF26D913C600088C25 /* video3.mp4 in Resources */,
 				FA116EE826D7B6E300088C25 /* LaunchScreen.storyboard in Resources */,
 				FA116EFA26D7CE6200088C25 /* GoogleService-Info.plist in Resources */,
 				FA116EE526D7B6E300088C25 /* Assets.xcassets in Resources */,

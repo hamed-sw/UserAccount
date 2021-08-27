@@ -18,6 +18,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var errorLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -73,7 +74,7 @@ class SignUpViewController: UIViewController {
             
             if let error = error {
                 // there was an error createing the user
-                self.errorcheck("Error creating user")
+                self.errorcheck("Error creating user\(error.localizedDescription)")
             }else {
                 //user was created successfully, now store the first name and last name
                 
@@ -81,7 +82,7 @@ class SignUpViewController: UIViewController {
                 db.collection("users").addDocument(data: ["firstname": firstName,
                                                           "lastname":lastName, "uid": authResult!.user.uid ]) { err in
                     if err != nil {
-                        self.errorcheck("error saving user data")
+                        self.errorcheck("error saving user data\(String(describing: err?.localizedDescription))")
                     }
                 }
                 // transition to the home screen
