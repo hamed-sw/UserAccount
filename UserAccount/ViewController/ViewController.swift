@@ -25,6 +25,7 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+    
         setupvideo()
     }
     
@@ -54,7 +55,7 @@ class ViewController: UIViewController {
         // create the player
         
         videoPlayer  = AVPlayer(playerItem: item)
-        videoPlayer?.allowsExternalPlayback = true
+       
 
         
         // create the layer
@@ -64,15 +65,21 @@ class ViewController: UIViewController {
         // adjust the size and frame
     
         
-        videoPlayerLayer?.frame = CGRect(x: -self.view.frame.size.width*1.5, y: 0, width: self.view.frame.size.width*4, height: self.view.frame.size.height)
-        
+       // videoPlayerLayer?.frame = CGRect(x: -self.view.frame.size.width*1.5, y: 0, width: self.view.frame.size.width*4, height: self.view.frame.size.height)
+   
+
+      
+
+        videoPlayerLayer?.frame = self.view.bounds
+        videoPlayerLayer?.videoGravity = .resizeAspectFill
       
         
         view.layer.insertSublayer(videoPlayerLayer!, at: 0)
         
         // add it to the view and play it
+        videoPlayer?.play()
         
-        videoPlayer?.playImmediately(atRate: 1)
+      //  videoPlayer?.playImmediately(atRate: 1)
         
     }
         
