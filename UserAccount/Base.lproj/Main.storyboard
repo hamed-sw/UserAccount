@@ -138,14 +138,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLM-fv-Zwc">
+                                <rect key="frame" x="335" y="101" width="59" height="30"/>
+                                <state key="normal" title="Log Out"/>
+                                <connections>
+                                    <action selector="logOutButtonTapp:" destination="2Ec-TH-Ob5" eventType="touchUpInside" id="ntK-eI-pHi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9KU-MD-8Yp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="rLM-fv-Zwc" firstAttribute="top" secondItem="9KU-MD-8Yp" secondAttribute="top" constant="57" id="1DZ-Ip-T1V"/>
                             <constraint firstItem="ruv-H3-Gn8" firstAttribute="centerX" secondItem="MOG-x6-0JO" secondAttribute="centerX" id="4R1-0l-6QD"/>
                             <constraint firstItem="ruv-H3-Gn8" firstAttribute="centerY" secondItem="MOG-x6-0JO" secondAttribute="centerY" id="EzA-Sq-jPh"/>
+                            <constraint firstItem="rLM-fv-Zwc" firstAttribute="leading" secondItem="9KU-MD-8Yp" secondAttribute="leading" constant="335" id="H27-Gv-EmT"/>
+                            <constraint firstItem="9KU-MD-8Yp" firstAttribute="bottom" secondItem="rLM-fv-Zwc" secondAttribute="bottom" constant="731" id="ONt-9U-SNa"/>
+                            <constraint firstItem="9KU-MD-8Yp" firstAttribute="trailing" secondItem="rLM-fv-Zwc" secondAttribute="trailing" constant="20" id="klH-nU-Vb5"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="logOutB" destination="rLM-fv-Zwc" id="u2v-DQ-HrF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zGN-hZ-Nm6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

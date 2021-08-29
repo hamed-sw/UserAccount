@@ -6,9 +6,12 @@
 //
 
 import UIKit
+import FirebaseAuth
+import Firebase
 
 class SuccesViewController: UIViewController {
 
+    @IBOutlet weak var logOutB: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,4 +29,15 @@ class SuccesViewController: UIViewController {
     }
     */
 
+    @IBAction func logOutButtonTapp(_ sender: Any) {
+        do {
+            try! Auth.auth().signOut()
+            print("user signout")
+        }
+        catch {
+            print("error for sign out")
+        }
+        
+     
+    }
 }
